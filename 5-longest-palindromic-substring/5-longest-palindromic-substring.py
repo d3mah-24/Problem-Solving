@@ -1,8 +1,7 @@
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         m = ""
-        if len(s) == 1: return s
-        if len(s) == 2 and s[0]!= s[1]: return s[0]
+
         for i, a in enumerate(s):
             if a in s[i+1:]:
                 j = s[i+1:].index(a)+i+1
