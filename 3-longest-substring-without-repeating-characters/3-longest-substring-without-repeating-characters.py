@@ -1,7 +1,6 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        m,i=1,1
-        # dvdf
+        m,i=1,1 
         if len(s)==0: return 0
         if len(s)==1: return 1
         a =[s[0]]
