@@ -1,7 +1,6 @@
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         m = ""
-
         for i, a in enumerate(s):
             if a in s[i+1:]:
                 j = s[i+1:].index(a)+i+1
