@@ -10,8 +10,7 @@ class Solution:
                 a.append(b)   
             else: 
                 a=a[a.index(b)+1:]
-                a.append(b) 
-            print(a) 
+                a.append(b)  
             m=max(m,len(a))
         return m
          
